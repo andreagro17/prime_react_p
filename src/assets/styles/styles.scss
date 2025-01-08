@@ -1,0 +1,15 @@
+// styles.scss
+
+$primary-color: #007bff;
+$secondary-color: #333;
+$light-background: #f9f9f9;
+
+body {
+  background-color: $light-background;
+  font-family: 'Arial', sans-serif;
+  button {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+  }
+}

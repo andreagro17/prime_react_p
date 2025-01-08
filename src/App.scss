@@ -1,0 +1,10 @@
+// Importar variables base de PrimeFlex o PrimeReact si es necesario
+@import 'primeflex/primeflex.css';
+.main-content {
+    padding: 2rem;
+    .menu-button {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+}

@@ -1,0 +1,64 @@
+// Import the global styles to use shared variables
+@use '../assets/styles/styles' as styles;
+@use 'sass:color'; // Import Sass's color module
+
+
+.custom-header {
+  padding: 20px;
+
+  .menubar {
+    border: none;
+
+    .p-menubar-root-list {
+      padding-left: 40px;
+    }
+
+    .p-menuitem-link:hover {
+      background-color: color.adjust(styles.$secondary-color, $lightness: 60%);
+
+    }
+  }
+
+  .header-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  .search-button {
+    background-color: styles.$primary-color;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+
+    &:hover {
+      background-color: color.adjust(styles.$primary-color, $lightness: 10%);
+    }
+  }
+
+  .slider-container {
+    margin-top: 20px;
+  }
+
+  .slider-value {
+    font-size: 14px;
+    color: styles.$primary-color;
+    margin-top: 10px;
+  }
+
+  .p-progressbar {
+    height: 6px;
+    border-radius: 3px;
+
+    .p-progressbar-value {
+      background-color: styles.$primary-color;
+    }
+  }
+}
